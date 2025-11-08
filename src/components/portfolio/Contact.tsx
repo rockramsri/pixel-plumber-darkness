@@ -36,7 +36,7 @@ export const Contact = () => {
               </a>
 
               <a
-                href="https://linkedin.com/in/sriram-madhiyalagan"
+                href="https://www.linkedin.com/in/sriram-madhiyalagan-832a74194/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group"

@@ -33,29 +33,29 @@ export const Hero = () => {
           {/* Subtitle with pixel effect */}
           <div className="space-y-2">
             <p className="font-pixel text-xs md:text-sm text-secondary">
-              Software Engineer
+              AI/ML Engineer | Search Systems Architect
             </p>
             <p className="font-pixel text-xs md:text-sm text-accent">
-              AI/ML Specialist
+              2x Hackathon Winner 🏆
             </p>
             <p className="font-pixel text-xs md:text-sm text-foreground/80">
-              2x Hackathon Winner 🏆
+              Pro Gamer (rockramsri) 🎮
             </p>
           </div>
 
           {/* Stats display like game score */}
           <div className="flex justify-center gap-8 py-6">
             <div className="text-center">
-              <div className="font-pixel text-2xl text-primary">15+</div>
-              <div className="font-pixel text-xs text-muted-foreground mt-1">Hackathons</div>
+              <div className="font-pixel text-2xl text-primary">2x</div>
+              <div className="font-pixel text-xs text-muted-foreground mt-1">Winner</div>
             </div>
             <div className="text-center">
-              <div className="font-pixel text-2xl text-secondary">10+</div>
+              <div className="font-pixel text-2xl text-secondary">5</div>
               <div className="font-pixel text-xs text-muted-foreground mt-1">Projects</div>
             </div>
             <div className="text-center">
               <div className="font-pixel text-2xl text-accent">NYU</div>
-              <div className="font-pixel text-xs text-muted-foreground mt-1">Masters</div>
+              <div className="font-pixel text-xs text-muted-foreground mt-1">TA</div>
             </div>
           </div>
 
@@ -91,7 +91,7 @@ export const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/sriram-madhiyalagan"
+              href="https://www.linkedin.com/in/sriram-madhiyalagan-832a74194/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-secondary transition-all hover:scale-110"

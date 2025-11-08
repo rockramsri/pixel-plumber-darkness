@@ -14,20 +14,20 @@ export const About = () => {
         <Card className="p-8 bg-card border-2 border-primary/20 hover:border-primary/40 transition-all">
           <div className="space-y-6">
             <p className="font-pixel text-xs md:text-sm leading-relaxed text-foreground/90">
-              I'm a Master's student in Computer Science at <span className="text-primary">New York University Tandon School of Engineering</span>, where I also serve as a Teaching Assistant for Application Security.
+              I'm an <span className="text-primary">AI/ML Engineer</span> pursuing my Master's at NYU Tandon, specializing in designing and deploying scalable AI systems. From architecting flagship grading systems to building search engines and legal-tech platforms, I focus on creating production-ready systems that combine technical excellence with real-world impact.
             </p>
             
             <p className="font-pixel text-xs md:text-sm leading-relaxed text-foreground/90">
-              I specialize in building <span className="text-secondary">AI-powered systems</span> that solve real-world problems at the intersection of <span className="text-accent">machine learning</span>, <span className="text-accent">legal-tech</span>, and <span className="text-accent">climate intelligence</span>.
+              As a <span className="text-secondary">Teaching Assistant for Application Security</span> at NYU, I help students master security fundamentals. I'm a <span className="text-accent">2x hackathon winner</span> who thrives in fast-paced environments - shipping fast, learning faster, and building systems people can trust.
             </p>
 
             <p className="font-pixel text-xs md:text-sm leading-relaxed text-foreground/90">
-              With a <span className="text-primary">"build fast, learn faster"</span> mentality honed through 15+ hackathons (including 2 wins), I thrive in high-ownership environments where technical rigor meets entrepreneurial velocity.
+              Beyond code, I'm a <span className="text-primary">competitive gamer (rockramsri)</span>. I play at a semi-professional level in Valorant, Apex Legends, Rust, and Rocket League. Gaming teaches the same principles as engineering: rapid decision-making, team coordination, and optimizing for performance under pressure.
             </p>
 
             <div className="pt-6 border-t-2 border-dashed border-primary/20">
               <p className="font-pixel text-xs text-accent text-center">
-                "Technology should be both powerful and principled"
+                "Obsessed with shipping fast, learning faster, and building systems people can trust"
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export const About = () => {
             { label: "NYU TA", icon: "🎓" },
             { label: "2x Winner", icon: "🏆" },
             { label: "AI/ML", icon: "🤖" },
-            { label: "Full Stack", icon: "⚡" },
+            { label: "Pro Gamer", icon: "🎮" },
           ].map((badge, index) => (
             <Card
               key={index}
