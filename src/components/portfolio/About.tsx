@@ -18,7 +18,7 @@ export const About = () => {
             </p>
             
             <p className="font-pixel text-xs md:text-sm leading-relaxed text-foreground/90">
-              As a <span className="text-secondary">Teaching Assistant for Application Security</span> at NYU, I help students master security fundamentals. I'm a <span className="text-accent">2x hackathon winner</span> who thrives in fast-paced environments - shipping fast, learning faster, and building systems people can trust.
+              As a <span className="text-secondary">Teaching Assistant for Application Security</span> at NYU, I help students master security fundamentals. I'm a <span className="text-accent">2x hackathon winner</span> across <span className="text-primary">15+ hackathons</span>—I thrive in fast-paced arenas, shipping fast, learning faster, and building systems people can trust.
             </p>
 
             <p className="font-pixel text-xs md:text-sm leading-relaxed text-foreground/90">

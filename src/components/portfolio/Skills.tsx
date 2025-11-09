@@ -4,13 +4,13 @@ const skillCategories = [
   {
     title: "Languages",
     icon: "💻",
-    skills: ["Python", "C++", "Java", "TypeScript", "SQL"],
+    skills: ["Python", "C++", "Java", "TypeScript", "SQL", "Vibe Coding"],
     color: "primary",
   },
   {
     title: "AI/ML",
     icon: "🤖",
-    skills: ["LangChain", "RAG", "LLMs", "Llama 3.1", "Hugging Face"],
+    skills: ["LangChain", "RAG", "LLMs", "Hugging Face", "Fine-Tuning Pipelines"],
     color: "secondary",
   },
   {
