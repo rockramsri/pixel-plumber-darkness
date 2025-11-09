@@ -100,24 +100,13 @@ const experiences: ExperienceEntry[] = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-4 bg-muted/30 relative">
+    <section id="experience" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-5xl">
-        {/* Game Level Header */}
         <div className="text-center mb-12">
-          <div className="font-pixel text-xs text-secondary mb-2 animate-pulse">
-            ═══ STAGE 2-1 ═══
-          </div>
-          <h2 className="font-pixel text-2xl md:text-4xl text-primary mb-4 glow-blue">
-            ▼ EXPERIENCE POINTS ▼
+          <h2 className="font-pixel text-2xl md:text-4xl text-primary mb-4">
+            [ EXPERIENCE ]
           </h2>
-          <div className="flex items-center justify-center gap-2">
-            <div className="w-12 h-1 bg-secondary animate-pulse" />
-            <div className="text-2xl">🏆</div>
-            <div className="w-12 h-1 bg-secondary animate-pulse" />
-          </div>
-          <div className="font-pixel text-[10px] text-muted-foreground mt-4">
-            PRESS START TO VIEW QUEST LOG
-          </div>
+          <div className="w-32 h-1 bg-accent mx-auto" />
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
@@ -127,10 +116,7 @@ export const Experience = () => {
               value={`exp-${index}`}
               className="border-none overflow-hidden rounded-lg border-2 border-primary/20 bg-card transition-all hover:border-primary/60 data-[state=open]:border-primary/60"
             >
-              <AccordionTrigger className="px-6 md:px-8 text-left hover:bg-primary/5 transition-colors relative group">
-                <div className="absolute left-2 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity font-pixel text-xs text-accent">
-                  ▶
-                </div>
+              <AccordionTrigger className="px-6 md:px-8 text-left">
                 <div className="flex w-full flex-col gap-4 md:flex-row md:items-center md:justify-between">
                   <div>
                     <h3 className="font-pixel text-sm md:text-base text-foreground mb-2">
@@ -153,27 +139,24 @@ export const Experience = () => {
                     >
                       {exp.period}
                     </Badge>
-                    <span className="font-pixel text-[10px] uppercase tracking-widest text-accent animate-pulse">
-                      ▼ PRESS ▼
+                    <span className="font-pixel text-[10px] uppercase tracking-widest text-muted-foreground">
+                      Press Start to expand
                     </span>
                   </div>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="px-6 md:px-8 bg-muted/20">
-                <div className="border-t-4 border-dashed border-accent/20 pt-4">
-                  <ul className="space-y-3">
-                    {exp.achievements.map((achievement, i) => (
-                      <li
-                        key={i}
-                        className="font-pixel text-xs text-foreground/80 leading-relaxed flex items-start group hover:text-foreground transition-colors"
-                      >
-                        <span className="text-accent mr-2 group-hover:animate-pulse">★</span>
-                        <span>{achievement}</span>
-                        <span className="ml-2 text-[10px] text-secondary opacity-0 group-hover:opacity-100 transition-opacity">+{(i+1)*10}XP</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <AccordionContent className="px-6 md:px-8">
+                <ul className="space-y-3">
+                  {exp.achievements.map((achievement, i) => (
+                    <li
+                      key={i}
+                      className="font-pixel text-xs text-foreground/80 leading-relaxed flex items-start"
+                    >
+                      <span className="text-accent mr-2">▸</span>
+                      <span>{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
               </AccordionContent>
             </AccordionItem>
           ))}
