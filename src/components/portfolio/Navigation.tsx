@@ -41,25 +41,33 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/20">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b-4 border-primary/40 shadow-[0_4px_0px_rgba(0,0,0,0.4)]">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
+          {/* Player Indicator */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-pixel text-primary hover:text-accent transition-colors"
+            className="flex items-center gap-2 font-pixel text-primary hover:text-accent transition-colors group"
           >
-            SM
+            <span className="text-xs text-accent animate-pulse">▶</span>
+            <span className="text-lg">1P</span>
+            <span className="text-xs hidden md:block text-muted-foreground group-hover:text-accent transition-colors">SRIRAM M</span>
           </button>
           
-          <div className="hidden md:flex gap-1">
-            {navItems.map((item) => (
+          <div className="hidden md:flex gap-1 items-center">
+            {navItems.slice(1).map((item) => (
               <Button
                 key={item.id}
                 variant={activeSection === item.id ? "default" : "ghost"}
                 size="sm"
                 onClick={() => scrollToSection(item.id)}
-                className="font-pixel text-xs px-4 transition-all hover:scale-105"
+                className={`font-pixel text-xs px-4 transition-all hover:scale-105 ${
+                  activeSection === item.id 
+                    ? 'border-2 border-accent shadow-[2px_2px_0px_rgba(0,0,0,0.4)] animate-pulse-glow' 
+                    : 'border-2 border-transparent hover:border-primary/20'
+                }`}
               >
+                {activeSection === item.id && <span className="mr-1">▶</span>}
                 {item.label}
               </Button>
             ))}

@@ -7,12 +7,14 @@ import { Contact } from "@/components/portfolio/Contact";
 import { Navigation } from "@/components/portfolio/Navigation";
 import { PixelBackground } from "@/components/portfolio/PixelBackground";
 import { Research } from "@/components/portfolio/Research";
+import { GameHUD } from "@/components/portfolio/GameHUD";
 
 const Index = () => {
   return (
     <div className="relative min-h-screen">
       <PixelBackground />
       <Navigation />
+      <GameHUD />
       <main className="relative z-10">
         <Hero />
         <About />
